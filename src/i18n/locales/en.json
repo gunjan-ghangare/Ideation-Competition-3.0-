@@ -15,7 +15,8 @@
     "next": "Next",
     "loading": "Loading...",
     "error": "Error",
-    "success": "Success"
+    "success": "Success",
+    "backToHome": "Back to Home"
   },
   "header": {
     "title": "Forest Rights Record",
