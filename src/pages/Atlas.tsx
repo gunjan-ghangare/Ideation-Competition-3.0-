@@ -26,12 +26,12 @@ const Atlas = () => {
   ];
 
   const layers = [
-    { value: "all", label: "All Layers" },
+    { value: "all", label: t("atlasPage.allLayers") },
     { value: "villages", label: t("common.village") },
-    { value: "cfr", label: "CFR Areas" },
-    { value: "ifr", label: "IFR Areas" },
-    { value: "pattas", label: "Pattas" },
-    { value: "alerts", label: "Live Alerts" }
+    { value: "cfr", label: t("atlasPage.cfrAreas") },
+    { value: "ifr", label: t("atlasPage.ifrAreas") },
+    { value: "pattas", label: t("atlasPage.pattas") },
+    { value: "alerts", label: t("atlasPage.liveAlerts") }
   ];
 
   return (
@@ -85,7 +85,7 @@ const Atlas = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <Filter className="w-5 h-5" />
-                  Filters
+                  {t("atlasPage.filters")}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -121,7 +121,7 @@ const Atlas = () => {
                 </div>
                 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Map Layers</label>
+                  <label className="text-sm font-medium mb-2 block">{t("atlasPage.mapLayers")}</label>
                   <Select value={selectedLayer} onValueChange={setSelectedLayer}>
                     <SelectTrigger>
                       <SelectValue />
@@ -137,7 +137,7 @@ const Atlas = () => {
                 </div>
                 
                 <Button className="w-full">
-                  Apply Filters
+                  {t("atlasPage.applyFilters")}
                 </Button>
               </CardContent>
             </Card>
@@ -145,7 +145,7 @@ const Atlas = () => {
             {/* Quick Stats */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Quick Statistics</CardTitle>
+                <CardTitle className="text-lg">{t("atlasPage.quickStatistics")}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex justify-between items-center">
@@ -153,15 +153,15 @@ const Atlas = () => {
                   <Badge variant="secondary">50,247</Badge>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Active Pattas</span>
+                  <span className="text-sm text-muted-foreground">{t("atlasPage.activePattas")}</span>
                   <Badge variant="secondary">125,089</Badge>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">CFR Area (Ha)</span>
+                  <span className="text-sm text-muted-foreground">{t("atlasPage.cfrAreaHa")}</span>
                   <Badge variant="secondary">2.5M</Badge>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Live Alerts</span>
+                  <span className="text-sm text-muted-foreground">{t("atlasPage.liveAlerts")}</span>
                   <Badge variant="destructive">23</Badge>
                 </div>
               </CardContent>
@@ -172,7 +172,7 @@ const Atlas = () => {
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
                   <TrendingUp className="w-4 h-4" />
-                  Recent Alerts
+                  {t("atlasPage.recentAlerts")}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -195,7 +195,7 @@ const Atlas = () => {
                 </div>
                 
                 <Button variant="outline" size="sm" className="w-full">
-                  View All Alerts
+                  {t("atlasPage.viewAllAlerts")}
                 </Button>
               </CardContent>
             </Card>

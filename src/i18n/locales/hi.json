@@ -202,5 +202,42 @@
     "enabled": "सक्षम",
     "disabled": "अक्षम",
     "configureSettings": "सेटिंग्स कॉन्फ़िगर करें"
+  },
+  "atlasPage": {
+    "allLayers": "सभी परतें",
+    "cfrAreas": "CFR क्षेत्र",
+    "ifrAreas": "IFR क्षेत्र",
+    "pattas": "पट्टे",
+    "liveAlerts": "लाइव अलर्ट",
+    "filters": "फ़िल्टर",
+    "mapLayers": "मानचित्र परतें",
+    "applyFilters": "फ़िल्टर लागू करें",
+    "quickStatistics": "त्वरित आंकड़े",
+    "activePattas": "सक्रिय पट्टे",
+    "cfrAreaHa": "CFR क्षेत्र (हेक्टेयर)",
+    "recentAlerts": "हाल के अलर्ट",
+    "viewAllAlerts": "सभी अलर्ट देखें"
+  },
+  "login": {
+    "title": "FRA एटलस लॉगिन",
+    "subtitle": "पट्टा धारकों और अधिकारियों के लिए सुरक्षित पहुंच",
+    "enterPhone": "फोन नंबर दर्ज करें",
+    "verifyOtp": "OTP सत्यापित करें",
+    "mobileNumber": "मोबाइल नंबर",
+    "enterRegisteredMobile": "अपना पंजीकृत मोबाइल नंबर दर्ज करें",
+    "rememberDevice": "इस डिवाइस को याद रखें",
+    "needHelp": "मदद चाहिए?",
+    "sendOtp": "OTP भेजें",
+    "sendingOtp": "OTP भेजा जा रहा है...",
+    "enterOtp": "OTP दर्ज करें",
+    "otpSentTo": "इस पर OTP भेजा गया",
+    "demo": "डेमो:",
+    "changeNumber": "नंबर बदलें",
+    "resendOtp": "OTP पुनः भेजें",
+    "resendIn": "पुनः भेजें:",
+    "login": "लॉगिन करें",
+    "verifying": "सत्यापित किया जा रहा है...",
+    "demoAccess": "डेमो एक्सेस:",
+    "demoDescription": "किसी भी फोन नंबर और OTP का उपयोग करें:"
   }
 }

@@ -112,5 +112,42 @@
   "footer": {
     "developedUnder": "বন অধিকার আইন ২০০৬ এর অধীনে উন্নত",
     "governmentCredits": "ভারত সরকার, উপজাতীয় বিষয়ক মন্ত্রণালয়"
+  },
+  "atlasPage": {
+    "allLayers": "সমস্ত স্তর",
+    "cfrAreas": "CFR এলাকা",
+    "ifrAreas": "IFR এলাকা",
+    "pattas": "পাট্টা",
+    "liveAlerts": "লাইভ অ্যালার্ট",
+    "filters": "ফিল্টার",
+    "mapLayers": "ম্যাপ স্তর",
+    "applyFilters": "ফিল্টার প্রয়োগ করুন",
+    "quickStatistics": "দ্রুত পরিসংখ্যান",
+    "activePattas": "সক্রিয় পাট্টা",
+    "cfrAreaHa": "CFR এলাকা (হেক্টর)",
+    "recentAlerts": "সাম্প্রতিক অ্যালার্ট",
+    "viewAllAlerts": "সমস্ত অ্যালার্ট দেখুন"
+  },
+  "login": {
+    "title": "FRA অ্যাটলাস লগইন",
+    "subtitle": "পাট্টা ধারক এবং আধিকারিকদের জন্য নিরাপদ অ্যাক্সেস",
+    "enterPhone": "ফোন নম্বর লিখুন",
+    "verifyOtp": "OTP যাচাই করুন",
+    "mobileNumber": "মোবাইল নম্বর",
+    "enterRegisteredMobile": "আপনার নিবন্ধিত মোবাইল নম্বর লিখুন",
+    "rememberDevice": "এই ডিভাইস মনে রাখুন",
+    "needHelp": "সাহায্য প্রয়োজন?",
+    "sendOtp": "OTP পাঠান",
+    "sendingOtp": "OTP পাঠানো হচ্ছে...",
+    "enterOtp": "OTP লিখুন",
+    "otpSentTo": "এই নম্বরে OTP পাঠানো হয়েছে",
+    "demo": "ডেমো:",
+    "changeNumber": "নম্বর পরিবর্তন করুন",
+    "resendOtp": "OTP পুনরায় পাঠান",
+    "resendIn": "পুনরায় পাঠান:",
+    "login": "লগইন",
+    "verifying": "যাচাই করা হচ্ছে...",
+    "demoAccess": "ডেমো অ্যাক্সেস:",
+    "demoDescription": "যেকোন ফোন নম্বর এবং OTP ব্যবহার করুন:"
   }
 }

@@ -112,5 +112,42 @@
   "footer": {
     "developedUnder": "అటవీ హక్కుల చట్టం 2006 కింద అభివృద్ధి చేయబడింది",
     "governmentCredits": "భారత ప్రభుత్వం, గిరిజన వ్యవహారాల మంత్రిత్వ శాఖ"
+  },
+  "atlasPage": {
+    "allLayers": "అన్ని పొరలు",
+    "cfrAreas": "CFR ప్రాంతాలు",
+    "ifrAreas": "IFR ప్రాంతాలు",
+    "pattas": "పట్టాలు",
+    "liveAlerts": "లైవ్ అలెర్ట్‌లు",
+    "filters": "ఫిల్టర్‌లు",
+    "mapLayers": "మ్యాప్ పొరలు",
+    "applyFilters": "ఫిల్టర్‌లను వర్తింపజేయండి",
+    "quickStatistics": "శీఘ్ర గణాంకాలు",
+    "activePattas": "క్రియాశీల పట్టాలు",
+    "cfrAreaHa": "CFR ప్రాంతం (హెక్టార్లు)",
+    "recentAlerts": "ఇటీవలి అలెర్ట్‌లు",
+    "viewAllAlerts": "అన్ని అలెర్ట్‌లను వీక్షించండి"
+  },
+  "login": {
+    "title": "FRA అట్లాస్ లాగిన్",
+    "subtitle": "పట్టాదారులు మరియు అధికారుల కోసం సురక్షిత యాక్సెస్",
+    "enterPhone": "ఫోన్ నంబర్ నమోదు చేయండి",
+    "verifyOtp": "OTPని ధృవీకరించండి",
+    "mobileNumber": "మొబైల్ నంబర్",
+    "enterRegisteredMobile": "మీ రిజిస్టర్డ్ మొబైల్ నంబర్ నమోదు చేయండి",
+    "rememberDevice": "ఈ పరికరాన్ని గుర్తుంచుకోండి",
+    "needHelp": "సహాయం కావాలా?",
+    "sendOtp": "OTP పంపండి",
+    "sendingOtp": "OTP పంపుతోంది...",
+    "enterOtp": "OTP నమోదు చేయండి",
+    "otpSentTo": "OTP దీనికి పంపబడింది",
+    "demo": "డెమో:",
+    "changeNumber": "నంబర్ మార్చండి",
+    "resendOtp": "OTP తిరిగి పంపండి",
+    "resendIn": "తిరిగి పంపండి:",
+    "login": "లాగిన్",
+    "verifying": "ధృవీకరిస్తోంది...",
+    "demoAccess": "డెమో యాక్సెస్:",
+    "demoDescription": "ఏదైనా ఫోన్ నంబర్ మరియు OTP ఉపయోగించండి:"
   }
 }

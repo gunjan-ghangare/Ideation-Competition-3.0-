@@ -202,5 +202,42 @@
     "enabled": "Enabled",
     "disabled": "Disabled",
     "configureSettings": "Configure Settings"
+  },
+  "atlasPage": {
+    "allLayers": "All Layers",
+    "cfrAreas": "CFR Areas",
+    "ifrAreas": "IFR Areas",
+    "pattas": "Pattas",
+    "liveAlerts": "Live Alerts",
+    "filters": "Filters",
+    "mapLayers": "Map Layers",
+    "applyFilters": "Apply Filters",
+    "quickStatistics": "Quick Statistics",
+    "activePattas": "Active Pattas",
+    "cfrAreaHa": "CFR Area (Ha)",
+    "recentAlerts": "Recent Alerts",
+    "viewAllAlerts": "View All Alerts"
+  },
+  "login": {
+    "title": "FRA Atlas Login",
+    "subtitle": "Secure access for patta holders and officials",
+    "enterPhone": "Enter Phone Number",
+    "verifyOtp": "Verify OTP",
+    "mobileNumber": "Mobile Number",
+    "enterRegisteredMobile": "Enter your registered mobile number",
+    "rememberDevice": "Remember this device",
+    "needHelp": "Need help?",
+    "sendOtp": "Send OTP",
+    "sendingOtp": "Sending OTP...",
+    "enterOtp": "Enter OTP",
+    "otpSentTo": "OTP sent to",
+    "demo": "Demo:",
+    "changeNumber": "Change Number",
+    "resendOtp": "Resend OTP",
+    "resendIn": "Resend in",
+    "login": "Login",
+    "verifying": "Verifying...",
+    "demoAccess": "Demo Access:",
+    "demoDescription": "Use any phone number and OTP:"
   }
 }

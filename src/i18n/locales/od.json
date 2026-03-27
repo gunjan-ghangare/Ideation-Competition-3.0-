@@ -112,5 +112,42 @@
   "footer": {
     "developedUnder": "ବନ ଅଧିକାର ଅଧିନିୟମ ୨୦୦୬ ଅଧୀନରେ ବିକଶିତ",
     "governmentCredits": "ଭାରତ ସରକାର, ଜନଜାତି କାର୍ଯ୍ୟ ମନ୍ତ୍ରଣାଳୟ"
+  },
+  "atlasPage": {
+    "allLayers": "ସମସ୍ତ ସ୍ତର",
+    "cfrAreas": "ସିଏଫଆର ଅଞ୍ଚଳ",
+    "ifrAreas": "ଆଇଏଫଆର ଅଞ୍ଚଳ",
+    "pattas": "ପଟ୍ଟା",
+    "liveAlerts": "ଲାଇଭ ଆଲର୍ଟ",
+    "filters": "ଫିଲ୍ଟରଗୁଡ଼ିକ",
+    "mapLayers": "ମାନଚିତ୍ର ସ୍ତର",
+    "applyFilters": "ଫିଲ୍ଟର ଲାଗୁ କରନ୍ତୁ",
+    "quickStatistics": "ଶୀଘ୍ର ପରିସଂଖ୍ୟାନ",
+    "activePattas": "ସକ୍ରିୟ ପଟ୍ଟା",
+    "cfrAreaHa": "ସିଏଫଆର ଅଞ୍ଚଳ (ହେକ୍ଟର)",
+    "recentAlerts": "ସାମ୍ପ୍ରତିକ ଆଲର୍ଟ",
+    "viewAllAlerts": "ସମସ୍ତ ଆଲର୍ଟ ଦେଖନ୍ତୁ"
+  },
+  "login": {
+    "title": "FRA ଆଟଲାସ୍ ଲଗଇନ୍",
+    "subtitle": "ପଟ୍ଟାଧାରୀ ଏବଂ ଅଧିକାରୀଙ୍କ ପାଇଁ ସୁରକ୍ଷିତ ପ୍ରବେଶ",
+    "enterPhone": "ଫୋନ୍ ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ",
+    "verifyOtp": "OTP ଯାଞ୍ଚ କରନ୍ତୁ",
+    "mobileNumber": "ମୋବାଇଲ୍ ନମ୍ବର",
+    "enterRegisteredMobile": "ଆପଣଙ୍କର ପଞ୍ଜୀକୃତ ମୋବାଇଲ୍ ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ",
+    "rememberDevice": "ଏହି ଡିଭାଇସ୍ ମନେ ରଖନ୍ତୁ",
+    "needHelp": "ସାହାଯ୍ୟ ଦରକାର କି?",
+    "sendOtp": "OTP ପଠାନ୍ତୁ",
+    "sendingOtp": "OTP ପଠାଯାଉଛି...",
+    "enterOtp": "OTP ପ୍ରବେଶ କରନ୍ତୁ",
+    "otpSentTo": "ଏହାକୁ OTP ପଠାଯାଇଛି",
+    "demo": "ଡେମୋ:",
+    "changeNumber": "ନମ୍ବର ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+    "resendOtp": "OTP ପୁନର୍ବାର ପଠାନ୍ତୁ",
+    "resendIn": "ପୁନର୍ବାର ପଠାନ୍ତୁ:",
+    "login": "ଲଗଇନ୍",
+    "verifying": "ଯାଞ୍ଚ କରାଯାଉଛି...",
+    "demoAccess": "ଡେମୋ ପ୍ରବେଶ:",
+    "demoDescription": "ଯେକୌଣସି ଫୋନ୍ ନମ୍ବର ଏବଂ OTP ବ୍ୟବହାର କରନ୍ତୁ:"
   }
 }

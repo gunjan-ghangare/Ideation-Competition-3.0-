@@ -11,6 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Checkbox } from "@/components/ui/checkbox";
 import { ArrowLeft, Phone, Key, Shield, Eye, EyeOff, AlertCircle, CheckCircle2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import { useAuth } from "@/contexts/AuthContext";
 
@@ -36,6 +37,7 @@ type OtpFormData = z.infer<typeof otpSchema>;
 
 const Login = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const { login, user } = useAuth();
   const [step, setStep] = useState<"phone" | "otp">("phone");
   const [loading, setLoading] = useState(false);
@@ -183,7 +185,7 @@ const Login = () => {
           <Button variant="ghost" size="sm" asChild className="mb-4">
             <Link to="/">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
+              {t('common.backToHome')}
             </Link>
           </Button>
           
@@ -195,8 +197,8 @@ const Login = () => {
             <div className="w-16 h-16 bg-forest/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="w-8 h-8 text-forest" />
             </div>
-            <h1 className="text-2xl font-bold">FRA Atlas Login</h1>
-            <p className="text-muted-foreground">Secure access for patta holders and officials</p>
+            <h1 className="text-2xl font-bold">{t('login.title')}</h1>
+            <p className="text-muted-foreground">{t('login.subtitle')}</p>
           </motion.div>
         </div>
 
@@ -211,12 +213,12 @@ const Login = () => {
                 {step === "phone" ? (
                   <>
                     <Phone className="w-5 h-5" />
-                    Enter Phone Number
+                    {t('login.enterPhone')}
                   </>
                 ) : (
                   <>
                     <Key className="w-5 h-5" />
-                    Verify OTP
+                    {t('login.verifyOtp')}
                   </>
                 )}
               </CardTitle>
@@ -230,12 +232,12 @@ const Login = () => {
                       name="phone"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Mobile Number</FormLabel>
+                          <FormLabel>{t('login.mobileNumber')}</FormLabel>
                           <FormControl>
                             <Input type="tel" placeholder="+91 98765 43210" {...field} />
                           </FormControl>
                           <p className="text-xs text-muted-foreground mt-1">
-                            Enter your registered mobile number
+                            {t('login.enterRegisteredMobile')}
                           </p>
                           <FormMessage />
                         </FormItem>
@@ -252,7 +254,7 @@ const Login = () => {
                               checked={field.value}
                               onCheckedChange={field.onChange}
                             />
-                            <label className="cursor-pointer">Remember this device</label>
+                            <label className="cursor-pointer">{t('login.rememberDevice')}</label>
                           </div>
                         )}
                       />
@@ -261,12 +263,12 @@ const Login = () => {
                         onClick={() => toast.info("Contact support at support@example.com")}
                         className="text-sm text-primary hover:underline inline-flex items-center gap-1"
                       >
-                        <AlertCircle className="w-4 h-4" /> Need help?
+                        <AlertCircle className="w-4 h-4" /> {t('login.needHelp')}
                       </button>
                     </div>
 
                     <Button type="submit" className="w-full" disabled={loading}>
-                      {loading ? "Sending OTP..." : "Send OTP"}
+                      {loading ? t('login.sendingOtp') : t('login.sendOtp')}
                     </Button>
                   </form>
                 </Form>
@@ -278,16 +280,16 @@ const Login = () => {
                       name="otp"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Enter OTP</FormLabel>
+                          <FormLabel>{t('login.enterOtp')}</FormLabel>
                           <FormControl>
                             <Input type="text" maxLength={6} placeholder="123456" inputMode="numeric" {...field} />
                           </FormControl>
                           <div className="flex items-center justify-between mt-2">
                             <p className="text-xs text-muted-foreground">
-                              OTP sent to {phoneNumber || "your phone"}
+                              {t('login.otpSentTo')} {phoneNumber || "your phone"}
                             </p>
                             <Badge variant="secondary" className="bg-success/10 text-success inline-flex items-center gap-1">
-                              <CheckCircle2 className="w-3 h-3" /> Demo: 123456
+                              <CheckCircle2 className="w-3 h-3" /> {t('login.demo')} 123456
                             </Badge>
                           </div>
                           <FormMessage />
@@ -309,12 +311,12 @@ const Login = () => {
                         disabled={resendTimer > 0 || loading}
                         className="text-primary hover:underline disabled:opacity-50"
                       >
-                        {resendTimer > 0 ? `Resend in ${resendTimer}s` : "Resend OTP"}
+                        {resendTimer > 0 ? `${t('login.resendIn')} ${resendTimer}s` : t('login.resendOtp')}
                       </button>
                     </div>
 
                     <Button type="submit" className="w-full" disabled={loading}>
-                      {loading ? "Verifying..." : "Login"}
+                      {loading ? t('login.verifying') : t('login.login')}
                     </Button>
                   </form>
                 </Form>
@@ -333,10 +335,10 @@ const Login = () => {
           <Card className="bg-muted/30">
             <CardContent className="p-4">
               <p className="text-sm text-muted-foreground mb-2">
-                <strong>Demo Access:</strong>
+                <strong>{t('login.demoAccess')}</strong>
               </p>
               <p className="text-xs text-muted-foreground">
-                Use any phone number and OTP: <strong>123456</strong>
+                {t('login.demoDescription')} <strong>123456</strong>
               </p>
             </CardContent>
           </Card>
