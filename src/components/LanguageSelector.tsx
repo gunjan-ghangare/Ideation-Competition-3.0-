@@ -36,11 +36,11 @@ const LanguageSelector = ({ variant = "compact", className }: LanguageSelectorPr
         value={i18n.language}
         onValueChange={handleLanguageChange}
       >
-        <SelectTrigger className={`w-auto min-w-[120px] ${className}`}>
-          <div className="flex items-center gap-2">
+        <SelectTrigger className={`w-auto min-w-[70px] sm:min-w-[120px] h-9 ${className}`}>
+          <div className="flex items-center justify-center gap-2">
             <Globe className="w-4 h-4" />
             <span className="hidden sm:inline">{currentLanguage.nativeName}</span>
-            <span className="sm:hidden">{currentLanguage.flag}</span>
+            <span className="sm:hidden text-lg leading-none">{currentLanguage.flag}</span>
           </div>
         </SelectTrigger>
         <SelectContent>

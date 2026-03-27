@@ -66,11 +66,11 @@ export const UnifiedDashboard: React.FC = () => {
     <div className="w-full space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">AranyaX Dashboard</h1>
+          <h1 className="text-3xl font-bold">AI HUB Dashboard</h1>
           <p className="text-muted-foreground">AI-Powered WebGIS Decision Support System for FRA Implementation</p>
         </div>
         <Badge variant="outline" className="px-3 py-1">
-          SIH 2025 - Team AranyaX
+          FRA Atlas DSS
         </Badge>
       </div>
 

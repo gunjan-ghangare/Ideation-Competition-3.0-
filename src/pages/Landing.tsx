@@ -202,30 +202,30 @@ const Landing = () => {
       {/* Main Dashboard */}
       <div className="container mx-auto px-6 py-8">
         <Tabs value={activeSection} onValueChange={setActiveSection} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-8">
-            <TabsTrigger value="overview" className="flex items-center gap-2">
+          <TabsList className="flex overflow-x-auto whitespace-nowrap scrollbar-hide mb-8 w-full justify-start md:justify-center border-b pb-0">
+            <TabsTrigger value="overview" className="flex items-center gap-2 shrink-0">
               <Activity className="w-4 h-4" />
-              Overview
+              {t("landing.overviewTab")}
             </TabsTrigger>
-            <TabsTrigger value="search" className="flex items-center gap-2">
+            <TabsTrigger value="search" className="flex items-center gap-2 shrink-0">
               <Search className="w-4 h-4" />
-              Record Search
+              {t("landing.searchTab")}
             </TabsTrigger>
-            <TabsTrigger value="map" className="flex items-center gap-2">
+            <TabsTrigger value="map" className="flex items-center gap-2 shrink-0">
               <MapPin className="w-4 h-4" />
-              Atlas View
+              {t("landing.mapTab")}
             </TabsTrigger>
-            <TabsTrigger value="analytics" className="flex items-center gap-2">
+            <TabsTrigger value="analytics" className="flex items-center gap-2 shrink-0">
               <BarChart3 className="w-4 h-4" />
-              Analytics
+              {t("landing.analyticsTab")}
             </TabsTrigger>
-            <TabsTrigger value="management" className="flex items-center gap-2">
+            <TabsTrigger value="management" className="flex items-center gap-2 shrink-0">
               <Settings className="w-4 h-4" />
-              Management
+              {t("landing.managementTab")}
             </TabsTrigger>
-            <TabsTrigger value="demo" className="flex items-center gap-2">
+            <TabsTrigger value="demo" className="flex items-center gap-2 shrink-0">
               <Lightbulb className="w-4 h-4" />
-              AI HUB
+              {t("landing.demoTab")}
             </TabsTrigger>
           </TabsList>
 
@@ -243,7 +243,7 @@ const Landing = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Bell className="w-5 h-5" />
-                    Recent Activity
+                    {t("landing.recentActivity")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -274,27 +274,27 @@ const Landing = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Activity className="w-5 h-5" />
-                    System Health
+                    {t("landing.systemHealth")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span>System Uptime</span>
+                      <span>{t("landing.systemUptime")}</span>
                       <span>{dashboardStats.systemUptime}%</span>
                     </div>
                     <Progress value={dashboardStats.systemUptime} className="h-2" />
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span>Forest Cover Monitoring</span>
+                      <span>{t("landing.forestCoverMonitoring")}</span>
                       <span>{dashboardStats.forestCover}%</span>
                     </div>
                     <Progress value={dashboardStats.forestCover} className="h-2" />
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
-                      <span>Success Rate</span>
+                      <span>{t("landing.successRate")}</span>
                       <span>{dashboardStats.successRate}%</span>
                     </div>
                     <Progress value={dashboardStats.successRate} className="h-2" />
@@ -310,7 +310,7 @@ const Landing = () => {
               {/* State Selection */}
               <Card className="shadow-form">
                 <CardHeader>
-                  <CardTitle className="text-lg">State-wise Forest Rights Areas</CardTitle>
+                  <CardTitle className="text-lg">{t("landing.stateWiseRegions")}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-4 mb-6">
@@ -346,11 +346,11 @@ const Landing = () => {
                     <div className="grid grid-cols-2 gap-4 text-sm">
                       <div className="text-center">
                         <div className="font-bold text-primary">{currentStats.totalVillages.toLocaleString()}</div>
-                        <div className="text-muted-foreground">Total Villages</div>
+                        <div className="text-muted-foreground">{t("landing.totalVillages")}</div>
                       </div>
                       <div className="text-center">
                         <div className="font-bold text-gov-green">{currentStats.approvedPattas.toLocaleString()}</div>
-                        <div className="text-muted-foreground">Approved Pattas</div>
+                        <div className="text-muted-foreground">{t("landing.approvedPattas")}</div>
                       </div>
                     </div>
                     {selectedState !== "all" && (
@@ -374,7 +374,7 @@ const Landing = () => {
               {/* Search Form */}
               <Card className="shadow-form">
                 <CardHeader>
-                  <CardTitle>Select Record of Right</CardTitle>
+                  <CardTitle>{t("landing.selectRecordRight")}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {/* Record Type Selection */}
@@ -408,10 +408,10 @@ const Landing = () => {
                           setSelectedDistrict("all");
                         }}>
                           <SelectTrigger>
-                            <SelectValue placeholder="--Select State--" />
+                            <SelectValue placeholder={t("landing.selectState")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="all">All States</SelectItem>
+                            <SelectItem value="all">{t("landing.allStates")}</SelectItem>
                             {Object.entries(stateData).map(([code, data]) => (
                               <SelectItem key={code} value={code}>
                                 {data.name}
@@ -427,10 +427,10 @@ const Landing = () => {
                         </label>
                         <Select value={selectedDistrict} onValueChange={setSelectedDistrict}>
                           <SelectTrigger>
-                            <SelectValue placeholder="--Select District--" />
+                            <SelectValue placeholder={t("landing.selectDistrict")} />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="all">All Districts</SelectItem>
+                            <SelectItem value="all">{t("landing.allDistricts")}</SelectItem>
                             {selectedState !== "all" && stateData[selectedState as keyof typeof stateData] && 
                               stateData[selectedState as keyof typeof stateData].districts.map((district) => (
                                 <SelectItem key={district} value={district.toLowerCase().replace(/\s+/g, '_')}>
@@ -493,7 +493,7 @@ const Landing = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <FileCheck className="w-5 h-5" />
-                    Search Results ({searchResults.length} found)
+                    {t("landing.searchResultFound")} ({searchResults.length})
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -502,11 +502,11 @@ const Landing = () => {
                       <div key={result.id} className="border rounded-lg p-4 bg-muted/50">
                         <div className="grid md:grid-cols-4 gap-4">
                           <div>
-                            <h4 className="font-semibold text-sm">Holder Name</h4>
+                            <h4 className="font-semibold text-sm">{t("landing.holderName")}</h4>
                             <p className="text-sm">{result.holderName}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-sm">Location</h4>
+                            <h4 className="font-semibold text-sm">{t("landing.location")}</h4>
                             <p className="text-sm">{result.village}, {result.district}</p>
                             <p className="text-xs text-muted-foreground">{result.state}</p>
                           </div>
@@ -515,7 +515,7 @@ const Landing = () => {
                             <Badge variant="outline">{result.recordType}</Badge>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-sm">Status</h4>
+                            <h4 className="font-semibold text-sm">{t("landing.status")}</h4>
                             <Badge variant={result.status === 'Approved' ? 'default' : 'secondary'}>
                               {result.status}
                             </Badge>
@@ -536,7 +536,7 @@ const Landing = () => {
                   </div>
                   <div className="mt-4 pt-4 border-t flex justify-center">
                     <Button variant="outline" size="sm">
-                      Download Results as PDF
+                      {t("landing.downloadPdf")}
                     </Button>
                   </div>
                 </CardContent>
@@ -571,7 +571,7 @@ const Landing = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <BarChart3 className="w-5 h-5" />
-                    Scheme Performance
+                    {t("landing.schemePerformance")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -598,7 +598,7 @@ const Landing = () => {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <TrendingUp className="w-5 h-5" />
-                    Impact Metrics
+                    {t("landing.impactMetrics")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -621,21 +621,21 @@ const Landing = () => {
 
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle>Real-time Monitoring</CardTitle>
+                <CardTitle>{t("landing.realtimeMonitoring")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-primary">247</div>
-                    <div className="text-sm text-muted-foreground">Villages Monitored</div>
+                    <div className="text-sm text-muted-foreground">{t("landing.villagesMonitored")}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-success">15,847</div>
-                    <div className="text-sm text-muted-foreground">Active Beneficiaries</div>
+                    <div className="text-sm text-muted-foreground">{t("landing.activeBeneficiaries")}</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-warning">34</div>
-                    <div className="text-sm text-muted-foreground">Pending Reviews</div>
+                    <div className="text-sm text-muted-foreground">{t("landing.pendingReviews")}</div>
                   </div>
                 </div>
               </CardContent>
@@ -649,9 +649,9 @@ const Landing = () => {
                 <Card className="shadow-card hover:shadow-lg transition-shadow cursor-pointer">
                   <CardContent className="p-6 text-center">
                     <Shield className="w-12 h-12 mx-auto mb-4 text-primary" />
-                    <h3 className="font-semibold mb-2">Admin Panel</h3>
+                    <h3 className="font-semibold mb-2">{t("landing.adminPanel")}</h3>
                     <p className="text-sm text-muted-foreground">
-                      User management, system settings, and administrative controls
+                      {t("landing.adminDescription")}
                     </p>
                   </CardContent>
                 </Card>
@@ -661,9 +661,9 @@ const Landing = () => {
                 <Card className="shadow-card hover:shadow-lg transition-shadow cursor-pointer">
                   <CardContent className="p-6 text-center">
                     <Lightbulb className="w-12 h-12 mx-auto mb-4 text-success" />
-                    <h3 className="font-semibold mb-2">Decision Support</h3>
+                    <h3 className="font-semibold mb-2">{t("landing.decisionSupport")}</h3>
                     <p className="text-sm text-muted-foreground">
-                      AI-powered recommendations and analytics for forest management
+                      {t("landing.dssDescription")}
                     </p>
                   </CardContent>
                 </Card>
