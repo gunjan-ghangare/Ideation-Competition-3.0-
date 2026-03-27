@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   base:
     mode === "development"
       ? "/"
-      : "/DrishtiGIS-AI-Powered-FRA-Monitoring-System/",
+      : "/Ideation-Competition-3.0-/",
   server: {
     host: "::",
     port: 8080,
